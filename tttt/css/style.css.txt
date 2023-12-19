@@ -1,0 +1,154 @@
+/* Default styles for div elements */
+div {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Default styles for images within div elements */
+div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Media query for screens with a width of at least 772px (Tablet view) */
+@media screen and (min-width: 772px) {
+    div {
+        width: 48%; /* Two-column grid */
+    }
+
+    div:nth-child(2n) img {
+        border-radius: 50%; /* Circular shape for every even figure */
+    }
+
+    div:last-child {
+        width: 100%; /* Last figure takes up both columns */
+    }
+}
+
+/* Media query for screens with a width of at least 992px (Large screen view) */
+@media screen and (min-width: 992px) {
+    div {
+        width: 31.333%; /* Three-column grid */
+    }
+
+    div:nth-child(3n) img {
+        border-radius: 0; /* Remove border radius for every third figure */
+    }
+}
+
+/* Media query for prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    html, body {
+        scroll-behavior: auto; /* Remove scroll behavior */
+    }
+}
+
+/* Media query for dark color scheme */
+@media (prefers-color-scheme: dark) {
+    div {
+        background-color: #222; /* Dark background color */
+        color: #ffeb3b; /* Light font color */
+    }
+
+    div img {
+        border: 1px solid #000; /* Black border color */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+main {
+    border: 5px #000 solid;
+    margin: 10px;
+}
+ */
+/* 
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+ */
+/* img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+} */
+
+/* .child {
+    position: relative;
+    display: inline-block;
+    border: 5px black solid;
+    margin: 5px;
+    border-radius: 5px;
+} */
+
+/* 
+
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.button {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 25px;
+}
+ */
+/* 
+.button:hover {
+    background-color:#fff;
+} */
+
+/* 
+footer {
+    display: flex;
+    justify-content: center;
+} */
+
+/* 
+header {
+    border-radius: 5px;
+    border: 5px #000 solid;
+    margin: 10px;
+} */
+
+/* 
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.child:hover .label {
+    display: block;
+} */
